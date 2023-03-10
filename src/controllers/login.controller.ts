@@ -4,7 +4,6 @@ import { createToken } from "../services/auth.service.js"
 
 export const login=async(req,res)=>{
     try{
-    
         const {email,password}=req.body
         if(!email || !password){
             return res.status(404).json({message:"Submit all fields"})
